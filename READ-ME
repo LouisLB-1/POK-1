@@ -1,1 +1,5 @@
-Projet POK1, rendu
+Projet POK1
+
+Dans ce projet vous trouverez deux dossiers:
+- un premier avec des fichiers .vue qui explorent les différentes fonctionnalités proposées par Vue.js
+- un second qui reprend certaines de ces focntionnalités en Vanilla JS afin de vraiment comprendre l'intêret de Vue.js
