@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bonjour sans Vue</title>
+</head>
+<body>
+  <div id="app">
+    <input type="text" id="nomInput" placeholder="Entre ton nom">
+    <p id="bonjour"></p>
+  </div>
+
+  <script>
+    const input = document.getElementById('nomInput');
+    const message = document.getElementById('bonjour');
+
+    let nom = "";
+
+    function mettreAJourMessage() {
+      message.textContent = nom ? `Bonjour ${nom}` : "";
+    }
+
+    input.addEventListener('input', (event) => {
+      nom = event.target.value;
+      mettreAJourMessage();
+    });
+
+    mettreAJourMessage();
+  </script>
+</body>
+</html>

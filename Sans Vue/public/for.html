@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste des élèves sans Vue</title>
+</head>
+<body>
+  <ul id="liste-eleves"></ul>
+
+  <script>
+    const eleveList = ["Paul", "Jean", "Thomas"];
+
+    const ul = document.getElementById("liste-eleves");
+
+    eleveList.forEach(eleve => {
+      const li = document.createElement("li");
+      li.textContent = eleve;
+      ul.appendChild(li);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sans Vue</title>
+</head>
+<body>
+  <div id="app">
+    <p id="message"></p>
+    <button id="bouton">Changer état</button>
+  </div>
+
+  <script>
+    let connected = false;
+
+    const message = document.getElementById('message');
+    const bouton = document.getElementById('bouton');
+
+    function afficher() {
+      if (connected) {
+        message.textContent = 'Bienvenue, utilisateur !';
+      } else {
+        message.textContent = 'Veuillez vous connecter.';
+      }
+    }
+
+    bouton.addEventListener('click', () => {
+      connected = !connected;
+      afficher();
+    });
+
+    afficher();
+  </script>
+</body>
+</html> 
